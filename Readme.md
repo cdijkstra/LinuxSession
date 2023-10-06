@@ -1,4 +1,4 @@
-##Linux assignments
+## Linux assignments
 This repository contains Assignment for the Linux deep dive session at Freshminds
 
 ### What to do:
