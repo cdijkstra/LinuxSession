@@ -1,0 +1,51 @@
+2023-01-15 08:00:00: Rule 1: Allow incoming HTTP traffic
+2023-01-15 08:15:00: Rule 2: Allow incoming SSH traffic
+2023-01-15 08:30:00: Rule 3: Deny all incoming traffic from 192.168.1.100
+2023-01-15 08:45:00: Rule 4: Allow incoming traffic on port 8080
+2023-01-15 09:00:00: Rule 5: Deny outgoing traffic to example.com
+2023-01-15 09:15:00: Rule 6: Allow incoming traffic from 10.0.0.0/24
+2023-01-15 09:30:00: Rule 7: Deny all incoming traffic on port 22
+2023-01-15 09:45:00: Rule 8: Allow outgoing DNS traffic to 8.8.8.8
+2023-01-15 10:00:00: Rule 9: Allow incoming ICMP (ping) requests
+2023-01-15 10:15:00: Rule 10: Deny all incoming traffic from 203.0.113.5
+2023-01-15 10:30:00: Rule 11: Allow outgoing SMTP traffic to smtp.example.com
+2023-01-15 10:45:00: Rule 12: Deny incoming traffic from 172.16.0.0/16
+2023-01-15 11:00:00: Rule 13: Allow incoming traffic on port 443
+2023-01-15 11:15:00: Rule 14: Deny outgoing traffic to malicious-site.com
+2023-01-15 11:30:00: Rule 15: Allow outgoing traffic to trusted-site.com
+2023-01-15 11:45:00: Rule 16: Deny incoming traffic from 192.168.2.50
+2023-01-15 12:00:00: Rule 17: Allow incoming traffic on port 80
+2023-01-15 12:15:00: Rule 18: Allow outgoing traffic to updates.example.com
+2023-01-15 12:30:00: Rule 19: Deny outgoing traffic to suspicious-site.com
+2023-01-15 12:45:00: Rule 20: Allow incoming traffic from 10.1.1.0/24
+2023-01-15 13:00:00: Rule 21: Deny outgoing traffic to known-malware-server.com
+2023-01-15 13:15:00: Rule 22: Allow incoming traffic on port 8081
+2023-01-15 13:30:00: Rule 23: Deny incoming traffic from 192.168.3.75
+2023-01-15 13:45:00: Rule 24: Allow outgoing traffic to trusted-cdn.com
+2023-01-15 14:00:00: Rule 25: Deny incoming traffic from 10.2.2.0/24
+2023-01-15 14:15:00: Rule 26: Allow incoming traffic on port 123
+2023-01-15 14:30:00: Rule 27: Deny outgoing traffic to ad-tracking-server.com
+2023-01-15 14:45:00: Rule 28: Allow outgoing traffic to analytics.example.com
+2023-01-15 15:00:00: Rule 29: Allow incoming traffic from 192.168.4.0/24
+2023-01-15 15:15:00: Rule 30: Deny incoming traffic on port 53
+2023-01-15 15:30:00: Rule 31: Deny outgoing traffic to unwanted-ads-site.com
+2023-01-15 15:45:00: Rule 32: Allow incoming traffic from 10.3.3.3
+2023-01-15 16:00:00: Rule 33: Allow incoming traffic on port 25
+2023-01-15 16:15:00: Rule 34: Deny outgoing traffic to phishing-site.com
+2023-01-15 16:30:00: Rule 35: Allow outgoing traffic to secure-payment-gateway.com
+2023-01-15 16:45:00: Rule 36: Deny incoming traffic from 192.168.5.5
+2023-01-15 17:00:00: Rule 37: Allow incoming traffic on port 8082
+2023-01-15 17:15:00: Rule 38: Allow outgoing traffic to cloud-storage-service.com
+2023-01-15 17:30:00: Rule 39: Deny incoming traffic on port 443
+2023-01-15 17:45:00: Rule 40: Deny outgoing traffic to known-spam-site.com
+2023-01-15 18:00:00: Rule 41: Allow incoming traffic from 10.4.4.0/24
+2023-01-15 18:15:00: Rule 42: Allow outgoing traffic to social-media-platform.com
+2023-01-15 18:30:00: Rule 43: Deny incoming traffic from 192.168.6.6
+2023-01-15 18:45:00: Rule 44: Allow incoming traffic on port 4433
+2023-01-15 19:00:00: Rule 45: Deny outgoing traffic to data-leakage-site.com
+2023-01-15 19:15:00: Rule 46: Allow incoming traffic from 10.5.5.5
+2023-01-15 19:30:00: Rule 47: Deny incoming traffic on port 3389
+2023-01-15 19:45:00: Rule 48: Allow outgoing traffic to software-updates-repo.com
+2023-01-15 20:00:00: Rule 49: Deny incoming traffic from 192.168.7.7
+2023-01-15 20:15:00: Rule 50: Allow incoming traffic on port 8000
+
