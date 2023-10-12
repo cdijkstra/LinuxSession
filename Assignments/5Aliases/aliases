@@ -1,0 +1,19 @@
+alias ll='ls -alF'
+alias grep='grep --color=auto'
+alias df='df -h'
+alias du='du -h'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ~='cd ~'
+alias cpr='cp -r'
+
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git log'
+
+alias dockerps='docker ps -a'
+alias docs='cd ~/Documents'

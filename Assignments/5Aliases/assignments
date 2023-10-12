@@ -1,0 +1,6 @@
+1.0 A lot of aliases are mentioned in the file 'aliases'. Ensure they are added to your ~/.bashrc file *and are applied*. Play around with these commands for a bit
+
+1.1 A secure SSH password can be generated with 'ssh-keygen -t rsa -b 4096'. Enter a useful alias so you can easily access this command
+
+1.2 We will create an alias to display system information. We can use 'uname -r' to display the kernel version and 'cat /etc/os-release | grep PRETTY_NAME | cut -d'"' -f2' to display the OS type, I want you to create an alias that shows both text (like 'Kernel version is: ' and 'This OS is: ') followed by the result
+
