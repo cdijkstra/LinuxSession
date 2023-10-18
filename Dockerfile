@@ -1,6 +1,5 @@
 FROM fedora
-# Set a working directory in the container (optional)
-WORKDIR /app
+
 COPY Assignments /app/Assignments
 
 USER root
@@ -20,10 +19,10 @@ RUN getent passwd Alice >/dev/null || useradd -m -u 1000 Alice && \
     echo "%wheel ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/nopassword && \
     echo "Alice,Bob,Chris ALL=(ALL) NOPASSWD: /bin/su -" >> /etc/sudoers.d/su-nopassword
 
-# Change ownership of /app directory recursively to Alice:developers
+# Change ownership of /app directory recursively to Alice:developers and set User Alice
 RUN chown -R Alice:developers /app
-
-
 USER Alice
+WORKDIR /app
+
 # Run a shell command to set the immutability flag during container runtime
 CMD ["/bin/bash"]

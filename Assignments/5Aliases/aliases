@@ -15,5 +15,3 @@ alias gc='git commit'
 alias gp='git push'
 alias gl='git log'
 
-alias dockerps='docker ps -a'
-alias docs='cd ~/Documents'
