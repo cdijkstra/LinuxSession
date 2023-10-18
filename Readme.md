@@ -10,6 +10,7 @@ This repository contains Assignment for the Linux deep dive session at Freshmind
 * Checkout this repository on your local file system and step into this directory in your terminal
 * Run `docker build -t debian-devel -f DockerfileFull .`
 * Run `docker run -it --name debian-devel debian-devel`
+Note: On Windows, you should NOT run Docker in your WSL but in Powershell or CMD.
 
 After finishing assignments, make sure to stop the container
 
