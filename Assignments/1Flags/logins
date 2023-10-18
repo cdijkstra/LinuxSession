@@ -1,0 +1,8 @@
+2023-10-17 12:05: Successful login for user Alice.
+2023-10-17 12:10: Failed login attempt for user Bob.
+2023-10-17 12:13: Failed login attempt for user Eve.
+2023-10-17 12:15: Successful login for user Chris.
+2023-10-17 12:20: Failed login attempt for user David.
+2023-10-17 12:23: Failed login attempt for user Eve.
+2023-10-17 12:25: Successful login for user Eve.
+2023-10-17 12:23: Failed login attempt for user Eve.

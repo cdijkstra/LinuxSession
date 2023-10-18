@@ -1,0 +1,25 @@
+FROM ubuntu
+
+# Set a working directory in the container (optional)
+WORKDIR /app
+
+USER root
+
+# Install man pages and the 'ps' utility
+RUN apt-get update && apt-get install -y man man-db && apt-get clean
+
+# Add users Alice, Bob, and Chris and add Alice and Bob to the sudo group
+RUN getent passwd Alice >/dev/null || useradd -m -u 1000 Alice && \
+    getent passwd Bob >/dev/null || useradd -m -u 1001 Bob && \
+    getent passwd Chris >/dev/null || useradd -m -u 1002 Chris && \
+    usermod -aG sudo Alice && \
+    usermod -aG sudo Bob && \
+    usermod -aG sudo Chris
+
+# Change ownership of /app directory recursively to Alice
+RUN chown -R Alice: /app
+
+USER Alice
+
+# Run a shell command to set the immutability flag during container runtime
+CMD ["/bin/bash"]
