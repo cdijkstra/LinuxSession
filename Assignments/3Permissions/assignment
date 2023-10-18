@@ -1,0 +1,6 @@
+These assignment deal with file permissions.
+1. The rootPermissions script is not executable by the current user. Can you fix this?
+2. unnecessarilyExecutableFile.txt is executable for user, group and other. Remove these permissions.
+3. The openToEveryone file is open to user, group and world. Ensure that it rw to user, r to group and --- to world
+4. Remove execute for group and write for other for removeSomePermissions.txt
+5. Find out why you cannot modify the text in immutableFile.txt. Hint: look at `chatattr` cmdlet!

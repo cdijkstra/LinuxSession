@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# ANSI escape codes for red color
+RED='\033[0;31m'
+NC='\033[0m' # No color
+
 echo "Standard output"
-echo "Standard error." >&2 > /dev/stderr
+echo -e "${RED}Standard error.${NC}" >&2
 
 echo "Script completed."
-

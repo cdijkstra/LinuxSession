@@ -1,1 +1,1 @@
-echo Sucess
+echo Success

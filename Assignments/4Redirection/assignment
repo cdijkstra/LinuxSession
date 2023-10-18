@@ -1,0 +1,6 @@
+There is an executable script called script.sh.
+1. Output all content to output.txt
+2. Output stdout into stdout.txt
+3. Output stderr into stderr.txt
+4. Repeat 2 but ensure that stdout is not printed on screen
+5. Output stdout to mixed.txt and append stderr to it using a single command (containing &&).

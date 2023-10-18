@@ -1,0 +1,26 @@
+FROM fedora
+# Set a working directory in the container (optional)
+WORKDIR /app
+COPY Assignments /app/Assignments
+
+USER root
+
+RUN dnf install -y util-linux-user
+# Add users Alice, Bob and Chris and add Alice and Bob to the developers group
+RUN getent passwd Alice >/dev/null || useradd -m -u 1000 Alice && \
+    getent passwd Bob >/dev/null || useradd -m -u 1001 Bob && \
+    getent passwd Chris >/dev/null || useradd -m -u 1002 Chris && \
+    getent group developers >/dev/null || groupadd developers && \
+    usermod -aG wheel,developers Alice && \
+    usermod -aG wheel,developers Bob && \
+    usermod -aG wheel Chris && \
+    echo "%wheel ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/nopassword && \
+    echo "Alice,Bob,Chris ALL=(ALL) NOPASSWD: /bin/su -" >> /etc/sudoers.d/su-nopassword
+
+# Change ownership of /app directory recursively to Alice:developers
+RUN chown -R Alice:developers /app
+
+
+USER Alice
+# Run a shell command to set the immutability flag during container runtime
+CMD ["/bin/bash"]
