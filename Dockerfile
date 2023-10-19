@@ -3,12 +3,13 @@ FROM fedora
 COPY Assignments /app/Assignments
 
 USER root
-
 ENV MANPATH /usr/share/man
 
 RUN sudo sed -i '/tsflags=nodocs/d' /etc/dnf/dnf.conf && \
-sudo dnf -y reinstall $(rpm -qads --qf "PACKAGE: %{NAME}\n" | sed -n -E '/PACKAGE: /{s/PACKAGE: // ; h ; b }; /^not installed/ { g; p }' | uniq) && \
-dnf -y install nano
+dnf -y install nano util-linux man man-pages man-db && \
+dnf -y reinstall $(rpm -qads --qf "PACKAGE: %{NAME}\n" | sed -n -E '/PACKAGE: /{s/PACKAGE: // ; h ; b }; /^not installed/ { g; p }' | uniq) && \
+mandb
+
 # Add users Alice, Bob and Chris and add Alice and Bob to the developers group
 RUN getent passwd Alice >/dev/null || useradd -m -u 1000 Alice && \
     getent passwd Bob >/dev/null || useradd -m -u 1001 Bob && \

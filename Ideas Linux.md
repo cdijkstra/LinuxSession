@@ -11,6 +11,7 @@ What to Do:
     * Aliases. Share common ones and create one to generate secure SSH password
     * Add hints
 * Finish slides
+  * Use feedback forms in first slides
   * Add content on command chaining
   * Permissions, users and groups 
   * Slide on FHS
