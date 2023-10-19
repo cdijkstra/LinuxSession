@@ -6,7 +6,7 @@ USER root
 ENV MANPATH /usr/share/man
 
 RUN sudo sed -i '/tsflags=nodocs/d' /etc/dnf/dnf.conf && \
-dnf -y install nano util-linux man man-pages man-db && \
+dnf -y install nano util-linux man man-pages man-db tree && \
 dnf -y reinstall $(rpm -qads --qf "PACKAGE: %{NAME}\n" | sed -n -E '/PACKAGE: /{s/PACKAGE: // ; h ; b }; /^not installed/ { g; p }' | uniq) && \
 mandb
 
@@ -22,7 +22,14 @@ RUN getent passwd Alice >/dev/null || useradd -m -u 1000 Alice && \
     echo "Alice,Bob,Chris ALL=(ALL) NOPASSWD: /bin/su -" >> /etc/sudoers.d/su-nopassword
 
 # Change ownership of /app directory recursively to Alice:developers and set User Alice
-RUN chown -R Alice:developers /app
+RUN chown -R Alice:developers /app && chown root:root /app/Assignments/3Permissions/rootPermission.sh && \
+    chmod u=rwx,g=rwx,o= /app/Assignments/3Permissions/rootPermission.sh && \
+    chown Bob:developers /app/Assignments/3Permissions/Dir1 && \
+    chown Chris:Chris /app/Assignments/3Permissions/Dir2 && \
+    chmod 770 /app/Assignments/3Permissions/Dir1 && \
+    chmod 774 /app/Assignments/3Permissions/Dir2/Dir3 && \
+    chmod 777 /app/Assignments/3Permissions/Dir2/Dir3
+
 USER Alice
 WORKDIR /app
 

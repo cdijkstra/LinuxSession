@@ -1,0 +1,11 @@
+192.168.1.100 - - [15/Oct/2023:10:30:45 +0000] GET /page1 HTTP/1.1 200 312 http://example.com Mozilla/5.0
+192.168.1.101 - - [15/Oct/2023:10:35:20 +0000] GET /page2 HTTP/1.1 404 128 http://example.com Mozilla/5.0
+192.168.1.102 - - [15/Oct/2023:10:40:15 +0000] GET /page1 HTTP/1.1 200 312 http://example.com Mozilla/5.0
+192.168.1.100 - - [15/Oct/2023:10:45:33 +0000] GET /page3 HTTP/1.1 200 524 http://example.com Mozilla/5.0
+192.168.1.103 - - [15/Oct/2023:10:50:22 +0000] GET /page2 HTTP/1.1 200 312 http://example.com Mozilla/5.0
+192.168.1.104 - - [15/Oct/2023:10:55:17 +0000] GET /page3 HTTP/1.1 404 128 http://example.com Mozilla/5.0
+192.168.1.105 - - [15/Oct/2023:11:00:10 +0000] GET /page1 HTTP/1.1 200 312 http://example.com Mozilla/5.0
+192.168.1.106 - - [15/Oct/2023:11:05:05 +0000] GET /page2 HTTP/1.1 200 312 http://example.com Mozilla/5.0
+192.168.1.100 - - [15/Oct/2023:11:10:42 +0000] GET /page3 HTTP/1.1 404 128 http://example.com Mozilla/5.0
+192.168.1.107 - - [15/Oct/2023:11:15:33 +0000] GET /page1 HTTP/1.1 200 312 http://example.com Mozilla/5.0
+

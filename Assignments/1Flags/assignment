@@ -1,7 +1,0 @@
-
-1. In logins we find login attempts. See how you can grep failed login attempts
-2. The same as 1 but exclude attempts for Eve
-3. The man page for grep contains info about "invert", namely:
--v, --invert-match
-             Selected lines are those not matching any of the specified patterns.
-    You can find this using `man grep | grep invert. -v.` Find out why the command `man grep | grep -v` does not work.

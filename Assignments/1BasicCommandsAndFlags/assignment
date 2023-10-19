@@ -1,0 +1,10 @@
+1. Display all files in this directory in a human friendly format
+2. There is a file called Mario in the MarioWorld directory. Find from the shell all occurrences of 'Mario'.
+3. Now case-insensitive and whole-word match only
+4. Same as 3 but recursively in the entire MarioWorld directory (and subdirectories)
+
+## Advanced
+5. Look how to exclude matches in grep (hint: invert). Bonus Question: why cannot we look for a specific flag like: man grep | grep -A
+6. Question 4 but now recursively in the marioworld directory, and exclude the ones that are not actually mario
+5. Create level6 up to 10 in the same folder structure level1/level2/level3/.....
+6. Create Files called character1 up to 100 (so called 'character1', 'character2', etc) in the Marioworld directory

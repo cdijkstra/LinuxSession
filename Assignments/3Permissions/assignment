@@ -1,6 +1,10 @@
 These assignment deal with file permissions.
-1. The rootPermissions script is not executable by the current user. Can you fix this?
+1. The runScript script is not executable by the current user. Can you fix this?
 2. unnecessarilyExecutableFile.txt is executable for user, group and other. Remove these permissions.
 3. The openToEveryone file is open to user, group and world. Ensure that it rw to user, r to group and --- to world
 4. Remove execute for group and write for other for removeSomePermissions.txt
-5. Find out why Bob cam create files in this directory and Chris cannot.
+5. The rootPermissions script is not executable by the current user. Can you fix this?
+
+## Advanced
+6. Find out why Alice and Bob cam create files in Dir1 and Chris cannot.
+7. Find out why Alice cannot create files in Dir2 but can in Dir3

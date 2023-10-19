@@ -1,6 +1,10 @@
 There is an executable script called script.sh.
-1. Output all content to output.txt
+1. Output all script output to output.txt
 2. Output stdout into stdout.txt
 3. Output stderr into stderr.txt
+4. Output all script content to content.txt
 4. Repeat 2 but ensure that stdout is not printed on screen
+
+## Advanced
 5. Output stdout to mixed.txt and append stderr to it using a single command (containing &&).
+6. access.log contains diffent ips. Can you find all unique IPs and redirect those a IPs.log? Consider using cut or awk

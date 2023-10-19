@@ -1,0 +1,8 @@
+1. Successive Commands: Create a directory, step into it and ls by chaining these commads
+2. OR Command: echo an output of Not found when you don't find a specific ip address in firewall_dates.txt
+3. Save the current directory and list of all files in variables and print them in an echo statement
+4. Pipes: In logins we find login attempts. See how you can grep failed login attempts and exclude attempts for Eve
+5. Pipes: In firewall_dates.txt we find outgoing traffic. Sort these in reverse
+
+## Advanced
+6. In the subdirectory, try to delete all files ending in png by chaining commands. It should be a single "algorithmic" command. You may need regex
