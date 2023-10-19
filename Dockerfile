@@ -23,9 +23,10 @@ RUN getent passwd Alice >/dev/null || useradd -m -u 1000 Alice && \
 
 # Change ownership of /app directory recursively to Alice:developers and set User Alice
 RUN chown -R Alice:developers /app && chown root:root /app/Assignments/3Permissions/rootPermission.sh && \
-    chmod u=rwx,g=rwx,o= /app/Assignments/3Permissions/rootPermission.sh && \
-    chown Bob:developers /app/Assignments/3Permissions/Dir1 && \
-    chown Chris:Chris /app/Assignments/3Permissions/Dir2
+    chmod u=rwx,g=rwx,o= /app/Assignments/3Permissions/rootPermission.sh
+    #  && \
+    # chown Bob:developers /app/Assignments/3Permissions/Dir1 && \
+    # chown Chris:Chris /app/Assignments/3Permissions/Dir2
     # chmod 770 /app/Assignments/3Permissions/Dir1 && \
     # chmod 774 /app/Assignments/3Permissions/Dir2/Dir3 && \
     # chmod 777 /app/Assignments/3Permissions/Dir2/Dir3
